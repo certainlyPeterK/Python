@@ -1,9 +1,10 @@
-a = int(input())
-b = int(input())
+def task_413:
+    a = int(input())
+    b = int(input())
 
-if (a % 3 == 0 and b % 3 == 0):
-    print("True")
-elif (a % 3 != 0 and b % 3 != 0):
-    print("False")
-else:
-    print("Одно число делится на 3")
+    if (a % 3 == 0 and b % 3 == 0):
+        print("True")
+    elif (a % 3 != 0 and b % 3 != 0):
+        print("False")
+    else:
+        print("Одно число делится на 3")
