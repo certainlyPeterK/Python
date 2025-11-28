@@ -5,3 +5,23 @@ table = [["folder", "coursework.doc", "folder", "pict.png", "data.accdb"],
         ["project.psd", "cycle.py", "folder", "cycle.js", "turtle.py"]]
 
 print(table)
+
+pys = []
+jss = []
+
+for row in table:
+    for elem in reversed(row):
+        if row[row.index(elem)] == "folder":
+            row.pop(row.index(elem))
+        elif row[row.index(elem)] == "data.accdb":
+            row[row.index(elem)] = "data.sql"
+        elif row[row.index(elem)][-3:] == ".py":
+            pys.append(row[row.index(elem)])
+        elif row[row.index(elem)][-3:] == ".js":
+            jss.append("new_" + row[row.index(elem)])
+
+print(table)
+
+print(pys)
+print(jss)
+            
