@@ -1,4 +1,4 @@
-def task_491():
+def task_492():
     a = int(input("?\n"))
     dop = ""
     if a % 2 == 0 and a > 0:
