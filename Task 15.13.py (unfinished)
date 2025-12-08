@@ -1,0 +1,17 @@
+import time
+from turtle import *
+
+def drawButton():
+    begin_fill()
+    for i in range(4):
+        forward(50)
+        right(90)
+    end_fill()
+
+bgcolor('black')
+color("white")
+speed(10)
+
+drawButton()
+
+#Недодел
