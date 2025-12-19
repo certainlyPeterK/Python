@@ -1,0 +1,13 @@
+import random
+
+class BankAccount:
+    def __init__(self, owner: str, balance: float):
+        self.owner = owner
+        self.balance = balance
+        self.account_number = ''.join([str(random.randint(0, 9)) for i in range(10)])
+
+    def deposit(self, amount):
+        self.balance += amount 
+
+#Недодел!
+    
