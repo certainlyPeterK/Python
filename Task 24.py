@@ -26,4 +26,8 @@ class SecureFirewall(Firewall):
         if ip not in self.blocked_ips:
             self.blocked_ips.add(ip)
     
-# Недодел!!!
+    def attempt_connection(self, port, ip):
+        if self.is_port_open(port) and ip not in self.blocked_ips:
+            self.logs.append(f"Успешное подключение к {ip} по порту {port}")
+        else:
+            self.logs.append(f"Неуспешное подключение к {ip} по порту {port}")
